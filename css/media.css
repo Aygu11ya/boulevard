@@ -1,0 +1,130 @@
+@media(max-width:1160px){
+    .section-four .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        place-items: center;
+        max-width: 200px;
+    }
+    .section-one .container {
+        flex-direction: column;
+    }
+    .section-two .container{
+        flex-direction:column-reverse;
+    }
+    .section-three .container{
+        flex-direction: column;
+        
+    }
+    .three{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .three::after{
+            width: 1px;
+            height: 60px;
+        }
+        .three::before{
+            width: 1px;
+            height: 60px;
+        }
+}
+@media(max-width:960px){
+    
+    .header-nav .container{
+        gap: 300px;
+    }
+}
+@media(max-width:760px){
+    .header-container{
+        background: url(../img/airp.webp);
+        background-size: cover;
+        background-position: center;
+        min-height: 500px;
+        
+    }
+    .section-one p{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .section-two p{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .section-three p{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    h1{
+        font-size: 70px;
+        transform: translateY(40px);
+    }
+    .header-nav .container{
+        gap: 100px;
+    }
+}
+@media(max-width:660px){
+    .nav-list1 {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(9, 9, 9, 0.791);
+        inset: 0;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        transform: translateY(-100%);
+        transition: 1s;
+    }
+    .burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .burger:hover ~.nav-list1{
+        transform: translateY(0);
+    }
+    h1{
+        font-size: 80px;
+    }
+}
+@media(max-width:560px){
+    
+    .footer-list1{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .section-one p{
+        font-size: 18px;
+        width: 300px;
+    }
+    .section-two p{
+        width: 300px;
+        font-size: 18px;
+    }
+    .section-four .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        
+    }  
+    h1{
+        font-size: 50px;
+    }
+    .footer .container {
+        flex-direction: column;
+    }
+    
+}
+@media(max-width:460px){
+    .header-container{
+        background: url(../img/airbods.png);
+        background-size: cover;
+        min-height: 700px;
+    }
+    h1{
+        transform: translateY(0);
+    }
+}
